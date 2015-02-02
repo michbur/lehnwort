@@ -11,9 +11,36 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Anglizismen
 
-Blablabla start start
+```{r echo=FALSE,results='asis',fig.width=13}
+library(wordcloud)
+library(tm)
+words <- c("babysitter", "downloaden", "skypen",  "Couch", "Boss", "Campus", "cool", "Charts", "fair", "Heels", "leasen", "Manager", "mobben", "rappen", "sweet", "timen", "scannen", "relaxen", "parsen", " foulen", "Freak", "happy", "einloggen", "Dummy")
+more_words <- paste(unlist(lapply(words, function(i) rep(i, rpois(1, lambda = 6)))), collapse = " ")
+
+wordcloud(more_words, colors=brewer.pal(6,"Dark2"), random.order=FALSE, min.freq = 1, scale=c(5, 1))
+```
+
+
+
+---
+
+## Deutsche Wörter im Englischen
+
+```{r echo=FALSE,results='asis',fig.width=13}
+
+words <- c("angst", "autobahn", "bildungsroman", "blitz", "cofee klatsch", 
+"dirndl ", "doppelganger", "dreck ", "ersatz", "gemeinshaft", 
+"geselshaft", "gestalt", "gemutlich", "kaput ", "kindergarten", 
+"kitsch", "leitmotiv ", "poltergeist", "realpolitik", "sauerkraut", 
+"Schadenfreunde", "strudel", "suerbraten", "verboten", "vermouth", 
+"wanderjahr", "weltschmerz", "wunderkind", "zeitgeist")
+more_words <- paste(unlist(lapply(words, function(i) rep(i, rpois(1, lambda = 6)))), collapse = " ")
+
+wordcloud(more_words, colors=brewer.pal(6,"Dark2"), random.order=FALSE, min.freq = 2, scale=c(4, 1))
+```
+
 
 --- 
 
@@ -21,7 +48,12 @@ Blablabla start start
 
 Englisch: Intensiver Angst oder innere Unruhe.  
   
-Deutsch: Sowohl in der Fachsprache der Psychologie und gemeinsame Sprache verwendet.  
+Deutsch: sowohl in der Fachsprache der Psychologie und gemeinsame Sprache verwendet.  
+
+<div style='text-align: center;'>
+    <img src="angst.jpg" alt="Drawing" style="width: 300px;"/>
+</div>
+
 
 
 ---
@@ -33,6 +65,11 @@ Englisch: Material ohne Qualitäts.
 Deutsch: Schmutz.  
 
 
+<div style='text-align: center;'>
+    <img src="dreck.jpg" alt="Drawing" style="width: 500px;"/>
+</div>
+
+
 ---
 
 ## Ersatz
@@ -40,6 +77,10 @@ Deutsch: Schmutz.
 Englisch: Vertretung, meist von minderer Qualität angesehen.  
   
 Deutsch: Vertretung.  
+
+<div style='text-align: center;'>
+    <img src="ersatz.jpeg" alt="Drawing" style="width: 350px;"/>
+</div>
 
 
 ---
@@ -50,14 +91,21 @@ Englisch: ganze Natur von etwas.
   
 Deutsch: Form.  
 
+<div style='text-align: center;'>
+    <img src="gestalt.gif" alt="Drawing" style="width: 400px;"/>
+</div>
+
 ---
 
 ## Kaffeeklatsch
 
 Englisch: Treffen, wo die Menschen Chit Chat beim Trinken Kaffee oder Tee.  
   
-Deutsch: Siehe oben.  
+Deutsch: siehe oben.  
 
+<div style='text-align: center;'>
+    <img src="kaffeeklatsch.jpg" alt="Drawing" style="width: 400px;"/>
+</div>
 
 ---
 
@@ -65,8 +113,11 @@ Deutsch: Siehe oben.
 
 Englisch: klebrig Stil von Massen Kunst oder Design mit populären oder kulturellen Ikonen.  
   
-Deutsch: Siehe oben.  
+Deutsch: siehe oben.  
 
+<div style='text-align: center;'>
+    <img src="kitsch.jpg" alt="Drawing" style="width: 400px;"/>
+</div>
 
 ---
 
@@ -74,15 +125,66 @@ Deutsch: Siehe oben.
 
 Englisch: immer wiederkehrende musikalische Phrase.  
   
-Deutsch: Siehe oben, aber auch in der Literatur.  
+Deutsch: siehe oben, aber auch in der Literatur.  
 
-
+<div style='text-align: center;'>
+    <img src="leitmotif.jpg" alt="Drawing" style="width: 400px;"/>
+</div>
 
 ---
 
 ## Realpolitik
 
-Englisch: Diplomatie basiert vor allem auf Macht, sondern als moralische oder ethische Ideen
+Englisch: Diplomatie basiert vor allem auf Macht, sondern als moralische oder ethische Ideen.  
   
 Deutsch: Politik, die sich eng an den als real anerkannten Bedingungen und Möglichkeiten orientiert.
 
+<div style='text-align: center;'>
+    <img src="realpolitik.png" alt="Drawing" style="width: 250px;"/>
+</div>
+
+---
+
+## Schadenfreude
+
+Englisch: die Freude über das Missgeschick oder Unglück anderer.  
+
+Deutsch: siehe oben.  
+
+<div style='text-align: center;'>
+    <img src="schadenfreude.jpg" alt="Drawing" style="width: 250px;"/>
+</div>
+
+---
+
+## Strudel
+
+Englisch: Mehlspeise aus einer gefüllten und gebackenen oder gekochten Teigrolle.  
+
+Deutsch: siehe oben.  
+
+<div style='text-align: center;'>
+    <img src="strudel.jpg" alt="Drawing" style="width: 350px;"/>
+</div>
+
+
+---
+
+## Verboten
+
+Englisch: untersagt, unerlaubt, hat autoritären Konnotationen.  
+
+Deutsch: untersagt, unerlaubt.  
+
+
+---
+
+## Weltschmerz
+
+Englisch: Gefühl der Trauer und schmerzhaft empfundener Melancholie, das jemand über seine eigene Unzulänglichkeit empfindet, die er zugleich als Teil der Unzulänglichkeit der Welt, der bestehenden Verhältnisse betrachtet.  
+
+Deutsch: siehe oben.  
+
+<div style='text-align: center;'>
+    <img src="weltschmerz.jpg" alt="Drawing" style="width: 250px;"/>
+</div>
