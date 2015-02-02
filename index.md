@@ -81,7 +81,7 @@ Deutsch: Form.
 
 ## Kaffeeklatsch
 
-Englisch: Treffen, wo die Menschen beim Trinken Kaffee oder Tee trat≠schen.  
+Englisch: Treffen, wo die Menschen beim Trinken Kaffee oder Tee tratschen.  
   
 Deutsch: siehe oben.  
 
@@ -174,9 +174,5 @@ Deutsch: siehe oben.
 ---
 
 ## Das Ende!
-
-
-
-
 
 Vielen Dank f√ºr Ihre Aufmerksamkeit
